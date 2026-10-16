@@ -10,8 +10,17 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li>[In part 1, is it possible to solve the problem using a single "for" loop?]</li>
+      <p>[Ja, det er mulig å løse oppgave 1 med bare én for-løkke. Vi kan bruke to variabler, hvor den ene starter på 1 og teller oppover, mens den andre starter på 10 og teller nedover. Begge variablene endres hver gang løkken kjører. På denne måten kan vi lage begge tallrekkene samtidig.]</p>
+            <li>[In part 2, can we create what is known as an "infinite" loop within the condition of the "while" loop?]</li>
+      <p>[Ja, en while-løkke kan bli uendelig hvis betingelsen alltid er sann. For eksempel hvis vi har en variabel som aldri endres, slik at løkken aldri får muligheten til å stoppe. I gjetteoppgaven kan dette skje hvis tallet vi skal gjette, ikke finnes innenfor området med tilfeldige tall. For å unngå dette må vi sørge for at betingelsen kan bli false, og at programmet oppdaterer gjetningen for hver runde.]</p>
+            <li>[How does the program behave while it is guessing? Can
+the program perform other tasks concurrently?]</li>
+      <p>[Datamaskinen kan gjette veldig mange tall på kort tid. Hvor lang tid det tar, avhenger av hvor mange forsøk som trengs og hvor rask datamaskinen er. Siden tallene er tilfeldige, kan programmet noen ganger finne riktig tall raskt, mens det andre ganger tar lengre tid. Mens while-løkken kjører, fortsetter programmet å gjette uten pause. Annen JavaScript-kode på samme tråd må vente til løkken er ferdig, men datamaskinen kan fortsatt kjøre andre programmer samtidig.]</p>
+            <li>[Can we, for instance,
+change the order, considering rows to be innermost or columns to be innermost, or does this not
+matter?]</li>
+      <p>[Nested loops betyr at vi har en løkke inni en annen. I oppgave 5 bruker vi den ytterste løkken til å lage radene og den innerste til å lage kolonnene. For hver rad kjører den innerste løkken 9 ganger. Vi kan bytte rekkefølgen på løkkene, men da vil programmet gå gjennom kolonnene først i stedet for radene. Derfor har rekkefølgen betydning for hvordan resultatet bygges opp og skrives ut.]</p>
     </ol>
     <script type="module" src="./task_3-2.mjs" defer></script>
   </body>
