@@ -5,9 +5,73 @@
   <title>Submission 2.1</title>
 </head>
 <body>
-<script>
-  /* write your code below this line  🙂 */
+ <h1>DAT101 - Assignment 2.1</h1>
 
-</script>
+    <h2>Oppgaven</h2>
+
+    <p>1. Kan variabler opprettes uten verdi?</p>
+
+    <p>let kan opprettes uten verdi, men const må ha en verdi.</p> <br>
+
+
+    <p>2. Kan de opprettes på samme linje?</p>
+
+    <p>Ja, for eksempel let a = 1; const b = 2;.</p> <br>
+
+
+    <p>3. Kan en konstant endres?</p>
+
+    <p>Nei, en konstant kan ikke tildeles en ny verdi.</p> <br>
+
+
+
+    <p>4. Hva skjer uten let eller const?</p>
+
+    <p>I vanlig modus kan en tilordning til et udeklarert navn opprette en global variabel. Med "use strict" får du en feil.</p> <br>
+
+
+
+    <p>5. Hva er implicit og explicit?</p>
+
+    <p>Explicit betyr at du deklarerer med let eller const. Implicit betyr at variabelen opprettes uten en slik deklarasjon i ikke-streng modus.</p> <br>
+
+
+    <script>
+        "use strict";
+
+        let age = 25;
+        const birthYear = 2001;
+
+        console.log(age);
+        console.log(birthYear);
+
+        age = 26;
+        console.log(age);
+
+        let studentName = "Mats";
+        let studentAge = 31;
+        let studentHeight = 1.75;
+        const schoolName = "UiA";
+
+        let student = {
+            name: studentName,
+            age: studentAge,
+            height: studentHeight,
+            school: schoolName};
+
+        
+      
+
+        console.log(student);
+        console.log(student.name);
+
+        // valuePI = 3.14;
+
+        const valuePI = 3.14;
+        console.log(valuePI);
+
+       // valuePI = 3.15;
+
+    </script>
 </body>
 </html>
